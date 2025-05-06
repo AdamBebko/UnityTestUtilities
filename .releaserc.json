@@ -5,9 +5,9 @@
     ["@semantic-release/commit-analyzer", { "preset": "angular" }],
     "@semantic-release/release-notes-generator",
     ["@semantic-release/changelog", { "preset": "angular" }],
-    ["@semantic-release/npm", { "npmPublish": false, "pkgRoot": "UnityTestUtilities_Project/Packages/UnityTestUtilities" }],
+    ["@semantic-release/npm", { "npmPublish": false, "pkgRoot": "UnityTestUtilities_Project/Packages/com.adambebko.unitytestutilities" }],
     ["@semantic-release/git", {
-      "assets": ["UnityTestUtilities_Project/Packages/UnityTestUtilities/package.json", "CHANGELOG.md"],
+      "assets": ["UnityTestUtilities_Project/Packages/com.adambebko.unitytestutilities/package.json", "CHANGELOG.md"],
       "message": "chore(release): ${nextRelease.version} [skip ci]\n\n${nextRelease.notes}"
     }],
     "@semantic-release/github"
