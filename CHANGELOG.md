@@ -1,3 +1,10 @@
+## [1.0.3](https://github.com/AdamBebko/UnityTestUtilities/compare/release/1.0.2...release/1.0.3) (2025-05-06)
+
+
+### Bug Fixes
+
+* remove define constraint ([6e4c54f](https://github.com/AdamBebko/UnityTestUtilities/commit/6e4c54f431302e010b75f13e149c663a4a71a379))
+
 ## [1.0.2](https://github.com/AdamBebko/UnityTestUtilities/compare/release/1.0.1...release/1.0.2) (2025-05-06)
 
 
