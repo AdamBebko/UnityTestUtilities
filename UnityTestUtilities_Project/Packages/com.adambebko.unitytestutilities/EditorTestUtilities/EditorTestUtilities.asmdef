@@ -12,8 +12,7 @@
     "overrideReferences": true,
     "precompiledReferences": [
         "NSubstitute.dll",
-        "nunit.framework.dll",
-        "System.Threading.Tasks.Extensions.4.1.0.0.dll"
+        "nunit.framework.dll"
     ],
     "autoReferenced": false,
     "defineConstraints": [
