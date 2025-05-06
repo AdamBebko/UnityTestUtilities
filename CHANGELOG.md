@@ -1,3 +1,10 @@
+## [1.0.2](https://github.com/AdamBebko/UnityTestUtilities/compare/release/1.0.1...release/1.0.2) (2025-05-06)
+
+
+### Bug Fixes
+
+* updated NSubstitute and assembly file ([1bd545e](https://github.com/AdamBebko/UnityTestUtilities/commit/1bd545e06be1ea5197877209dee73a864a5278f7))
+
 ## [1.0.1](https://github.com/AdamBebko/UnityTestUtilities/compare/release/1.0.0...release/1.0.1) (2025-05-06)
 
 
