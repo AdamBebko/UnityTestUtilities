@@ -1,3 +1,10 @@
+## [1.0.1](https://github.com/AdamBebko/UnityTestUtilities/compare/release/1.0.0...release/1.0.1) (2025-05-06)
+
+
+### Bug Fixes
+
+* broken assembly reference ([5a78918](https://github.com/AdamBebko/UnityTestUtilities/commit/5a78918af005941aedfa0da51e13513f4510dcf7))
+
 # 1.0.0 (2025-05-06)
 
 
