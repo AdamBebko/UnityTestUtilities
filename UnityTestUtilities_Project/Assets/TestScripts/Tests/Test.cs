@@ -13,11 +13,6 @@ namespace TestScripts.Tests
             AssertVectors.WithinTolerance(new Vector3(0,0,0.00000000001f), Vector3.zero);
         }
 
-        public interface ISomeInterface
-        {
-            Vector3 DoSomething();
-        }
-
         [Test]
         public void TestNSubsitute()
         {
@@ -54,8 +49,8 @@ namespace TestScripts.Tests
         
             toInject.Inject("_injectedInterface", dependency);
         
-            Assert.IsNotNull(toInject.ReadInjectedDependency);
-            Assert.ReferenceEquals(dependency, toInject.ReadInjectedInterface);
+            Assert.IsNotNull(toInject.ReadInjectedInterface);
+            Assert.AreSame(dependency, toInject.ReadInjectedInterface);
         }
     }
 }
