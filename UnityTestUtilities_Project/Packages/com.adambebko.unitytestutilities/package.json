@@ -1,6 +1,6 @@
 {
   "name": "com.adambebko.unitytestutilities",
-  "version": "0.0.1",
+  "version": "1.0.3",
   "displayName": "Unity Test Utilities",
   "description": "A suite of useful utilities and scripts for testing Unity projects",
   "unity": "6000.0",

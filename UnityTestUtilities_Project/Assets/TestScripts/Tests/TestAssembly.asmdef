@@ -1,7 +1,10 @@
 {
-    "name": "EditorTestUtilities",
+    "name": "TestAssembly",
     "rootNamespace": "",
-    "references": [],
+    "references": [
+        "GUID:e17c2847c5a6745f9abcd38b7e25069d",
+        "GUID:17f17756932e9421e808506bf7dabf61"
+    ],
     "includePlatforms": [
         "Editor"
     ],
