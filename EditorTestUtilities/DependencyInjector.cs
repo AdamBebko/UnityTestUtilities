@@ -24,11 +24,10 @@ namespace EditorTestUtilities
             
             if (field != null)
             {
-                if (field.FieldType != value.GetType())
+                if (!field.FieldType.IsAssignableFrom(value.GetType()))
                 {
-                    throw new ArgumentException($"Injector failed: Field {fieldName} is of type {field.FieldType} but value is of type {value.GetType()}");   
+                    throw new ArgumentException($"Injector failed: Field {fieldName} is of type {field.FieldType} but value is of type {value.GetType()} and does not inherit from it.");   
                 }
-                
                 field.SetValue(instance, value);
             }
             else
