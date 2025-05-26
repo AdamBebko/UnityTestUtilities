@@ -24,11 +24,17 @@ namespace EditorTestUtilities
             
             if (field != null)
             {
-                if (!field.FieldType.IsAssignableFrom(value.GetType()))
+                // Ensure the value can be assigned to the field's type
+                if (field.FieldType.IsInstanceOfType(value))
                 {
-                    throw new ArgumentException($"Injector failed: Field {fieldName} is of type {field.FieldType} but value is of type {value.GetType()} and does not inherit from it.");   
+                    field.SetValue(instance, value);
                 }
-                field.SetValue(instance, value);
+                else
+                {
+                    // This error message will be more descriptive if the type mismatch occurs
+                    throw new ArgumentException($"Injector failed: Value of type '{value.GetType()}' cannot be converted to field type '{field.FieldType}' for field '{fieldName}' on object of type '{monoBehaviourType}'");
+                }
+
             }
             else
             {
