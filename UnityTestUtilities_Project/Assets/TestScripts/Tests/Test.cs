@@ -24,4 +24,18 @@ public class Test
         Vector3 result = fakeImplementation.DoSomething();
         AssertVectors.WithinTolerance( new Vector3(7,7,7), result);
     }
+
+    [Test]
+    public void TestInjection()
+    {
+        var toInject = new GameObject().AddComponent<MonobehaviourWithPrivatePropertyToInject>();
+        
+        Assert.IsNull(toInject.ReadInjectedDependency);
+
+        string injectedName = "Injected";
+        toInject.Inject("_injected", new GameObject(injectedName));
+        
+        Assert.IsNotNull(toInject.ReadInjectedDependency);
+        Assert.AreEqual(injectedName, toInject.ReadInjectedDependency.name);
+    }
 }
