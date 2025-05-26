@@ -42,5 +42,20 @@ namespace TestScripts.Tests
             Assert.IsNotNull(toInject.ReadInjectedDependency);
             Assert.AreEqual(injectedName, toInject.ReadInjectedDependency.name);
         }
+
+        [Test]
+        public void TestInjectionWithStub()
+        {
+            var toInject = new GameObject().AddComponent<MonobehaviourWithPrivatePropertyToInject>();
+        
+            Assert.IsNull(toInject.ReadInjectedInterface);
+            
+            var dependency = Substitute.For<ISomeInterface>();
+        
+            toInject.Inject("_injectedInterface", dependency);
+        
+            Assert.IsNotNull(toInject.ReadInjectedDependency);
+            Assert.ReferenceEquals(dependency, toInject.ReadInjectedInterface);
+        }
     }
 }

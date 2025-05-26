@@ -1,8 +1,13 @@
 using UnityEngine;
 
-public class MonobehaviourWithPrivatePropertyToInject : MonoBehaviour
+namespace TestScripts
 {
-    GameObject _injected;
+    public class MonobehaviourWithPrivatePropertyToInject : MonoBehaviour
+    {
+        GameObject _injected;
+        ISomeInterface _injectedInterface;
 
-    public GameObject ReadInjectedDependency => _injected;
+        public GameObject ReadInjectedDependency => _injected;
+        public ISomeInterface ReadInjectedInterface => _injectedInterface;
+    }
 }
