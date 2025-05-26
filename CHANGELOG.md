@@ -1,3 +1,10 @@
+## [1.1.2](https://github.com/AdamBebko/UnityTestUtilities/compare/release/1.1.1...release/1.1.2) (2025-05-26)
+
+
+### Bug Fixes
+
+* cleanup error messages for injection ([35fbef8](https://github.com/AdamBebko/UnityTestUtilities/commit/35fbef84193b467ff6f423baf0f526c91b2be99b))
+
 ## [1.1.1](https://github.com/AdamBebko/UnityTestUtilities/compare/release/1.1.0...release/1.1.1) (2025-05-26)
 
 
