@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/AdamBebko/UnityTestUtilities/compare/release/1.0.3...release/1.1.0) (2025-05-26)
+
+
+### Features
+
+* Injector finalized ([62e59c2](https://github.com/AdamBebko/UnityTestUtilities/commit/62e59c2be15478bfb2db0f4883b439934879e227))
+
 ## [1.0.3](https://github.com/AdamBebko/UnityTestUtilities/compare/release/1.0.2...release/1.0.3) (2025-05-06)
 
 
