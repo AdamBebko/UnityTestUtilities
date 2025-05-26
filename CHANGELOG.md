@@ -1,3 +1,10 @@
+## [1.1.1](https://github.com/AdamBebko/UnityTestUtilities/compare/release/1.1.0...release/1.1.1) (2025-05-26)
+
+
+### Bug Fixes
+
+* case where types don't exactly match but are subclassed from the correct type. ([9da0973](https://github.com/AdamBebko/UnityTestUtilities/commit/9da0973dcb49f753a2a2db09d6769c72b2dd0c81))
+
 # [1.1.0](https://github.com/AdamBebko/UnityTestUtilities/compare/release/1.0.3...release/1.1.0) (2025-05-26)
 
 
